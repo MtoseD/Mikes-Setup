@@ -1,0 +1,130 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+.megamenu_subtitle {
+    font-family: navbartitle;
+    font-size: x-large;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    justify-content: space-around;
+    display: flex;
+    box-shadow: 5px 5px 5px  #CC00FF;
+    
+    font-family: navbartitle;
+    font-size: 24p;
+}
+
+.navbar a {
+    float: left;
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.column_navbar a{
+    font-size: 16px;
+}
+
+.navbar_title{
+    font-family: navbartitle;
+    font-size: x-large;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    font-family: navbartitle;
+    font-size: x-large;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #9D00FF;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top: 5px solid #9D00FF;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.column_navbar {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: whitesmoke;
+    height: 625px;
+    font-family: megamenu;
+}
+
+.column_navbar a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column_navbar a:hover {
+    background-color: #ddd;
+}
+
+.row_navbar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column_navbar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 0;
+    }
+    .megamenu_subtitle{
+        text-align: center;
+    }
+    .column_navbar a{
+        text-align: center;
+        padding: 8;
+    }
+    .navbar_title, .dropdown{
+        font-size: large;
+    }
+}

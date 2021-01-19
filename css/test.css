@@ -1,0 +1,131 @@
+body {
+    background: url(https://i.pinimg.com/originals/86/ab/66/86ab66de9449a62a4357ff4a9affec5b.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Font */
+
+@font-face {
+    font-family: "navbartitle";
+    src: url(../font/MinalisDemoBold-4meB.ttf);
+}
+
+@font-face {
+    font-family: "megamenu";
+    src: url(../font/Autobusbold-1ynL.ttf);
+}
+
+/* Home */
+
+.home_pic {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    float: initial;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.home_clip {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5%;
+    float: initial;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.home_text {
+    text-align: center;
+    color: whitesmoke;
+    font-family: megamenu;
+    font-size: x-large;
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .home_text {
+        font-size: large;
+    }
+}
+
+/* Smart Home */
+
+* {
+    box-sizing: border-box;
+}
+
+.column_smart {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.row_smart::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 600px) {
+    .column_smart {
+        width: 100%;
+    }
+}
+
+/* Footer */
+
+footer, .footer {
+    float: none;
+    background-color: #00FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.footer {
+    margin-top: 10%;
+}
+
+.tbfooter, .leftfooter {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.tbfooter {
+    font-weight: 900;
+}
+
+.leftfooter {
+    font-size: 150%;
+}
+
+@media screen and (max-width: 600px) {
+    footer, .footer {
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    .leftfooter {
+        order: 2;
+        margin-top: 10%;
+    }
+    .tbfooter {
+        order: 1;
+        margin-top: 5%;
+    }
+    footer, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
